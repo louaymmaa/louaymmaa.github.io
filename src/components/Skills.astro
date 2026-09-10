@@ -1,0 +1,31 @@
+---
+import Section from './Section.astro';
+import { skillGroups } from '../data/skills';
+---
+
+<Section id="skills" kicker="Skills" title="What I work with">
+  <p class="reveal max-w-2xl text-fg-muted">
+    An honest snapshot &mdash; solid where I say solid, and clearly marked where
+    I&rsquo;m still learning.
+  </p>
+
+  <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+    {
+      skillGroups.map((group) => (
+        <div class="reveal rounded-xl border border-border bg-surface p-5">
+          <h3 class="font-semibold text-fg">{group.label}</h3>
+          {group.note && (
+            <p class="mt-1 text-xs text-fg-muted">{group.note}</p>
+          )}
+          <ul class="mt-3 flex flex-wrap gap-2">
+            {group.items.map((item) => (
+              <li class="rounded-md border border-border bg-surface-2 px-2.5 py-1 text-sm text-fg-muted">
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))
+    }
+  </div>
+</Section>

@@ -1,0 +1,54 @@
+---
+import Section from './Section.astro';
+import { education } from '../data/experience';
+---
+
+<Section id="about" kicker="About" title="Who I am">
+  <div class="grid gap-8 md:grid-cols-[1.5fr_1fr]">
+    <div class="space-y-4 text-fg-muted [&_strong]:text-fg">
+      <p>
+        I&rsquo;m a recent <strong>Computer Science</strong> graduate from King Khalid
+        University. My strongest ground is problem solving and algorithms &mdash; my
+        team took <strong>1st place</strong> in the university&rsquo;s competitive
+        programming competition &mdash; and I&rsquo;m most comfortable in Java, Python
+        and C++.
+      </p>
+      <p>
+        Over the last year I&rsquo;ve been moving into web development: building
+        interfaces with HTML, CSS, JavaScript and Tailwind. Right now I&rsquo;m
+        working through <strong>React</strong> and <strong>Node.js</strong>. This
+        site is part of that &mdash; built with Astro and Tailwind, deployed as a
+        static site.
+      </p>
+      <p>
+        The direction I&rsquo;m heading is <strong>AI engineering</strong>: taking the
+        CS fundamentals I have and learning how to build real systems around models.
+        I work comfortably in both Arabic and English.
+      </p>
+    </div>
+
+    <aside
+      class="h-fit rounded-xl border border-border bg-surface p-5 text-sm"
+    >
+      <h3 class="font-semibold text-fg">Education</h3>
+      <dl class="mt-3 space-y-2 text-fg-muted">
+        <div>
+          <dt class="sr-only">Degree</dt>
+          <dd class="text-fg">{education.degree}</dd>
+        </div>
+        <div>
+          <dt class="sr-only">School</dt>
+          <dd>{education.school}</dd>
+        </div>
+        <div>
+          <dt class="sr-only">Period</dt>
+          <dd>{education.period}</dd>
+        </div>
+        <div>
+          <dt class="sr-only">GPA</dt>
+          <dd>GPA {education.gpa}</dd>
+        </div>
+      </dl>
+    </aside>
+  </div>
+</Section>

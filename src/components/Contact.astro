@@ -1,0 +1,55 @@
+---
+import Section from './Section.astro';
+import Icon from './Icon.astro';
+import { site } from '../data/site';
+---
+
+<Section id="contact" kicker="Contact" title="Let's talk">
+  <div
+    class="reveal rounded-2xl border border-border bg-surface p-8 text-center"
+  >
+    <p class="mx-auto max-w-md text-fg-muted">
+      I&rsquo;m looking for a software engineering role and open to freelance web
+      work. The fastest way to reach me is email.
+    </p>
+
+    <div class="mt-6 flex flex-wrap justify-center gap-3">
+      <a
+        href={`mailto:${site.email}`}
+        class="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-2.5 font-medium text-accent-fg transition-transform hover:-translate-y-0.5"
+      >
+        <Icon name="mail" size={18} />
+        {site.email}
+      </a>
+      <a
+        href={site.cv}
+        download
+        class="inline-flex items-center gap-2 rounded-lg border border-border bg-bg px-5 py-2.5 font-medium text-fg transition-colors hover:bg-surface-2"
+      >
+        <Icon name="download" size={18} />
+        Download CV
+      </a>
+    </div>
+
+    <div
+      class="mt-6 flex flex-wrap justify-center gap-5 text-sm text-fg-muted"
+    >
+      <a
+        href={site.socials.github}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-1.5 transition-colors hover:text-fg"
+      >
+        <Icon name="github" size={16} /> github.com/louaymmaa
+      </a>
+      <a
+        href={site.socials.linkedin}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-1.5 transition-colors hover:text-fg"
+      >
+        <Icon name="linkedin" size={16} /> LinkedIn
+      </a>
+    </div>
+  </div>
+</Section>
