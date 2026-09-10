@@ -9,8 +9,8 @@ import { site } from '../data/site';
     class="reveal rounded-2xl border border-border bg-surface p-8 text-center"
   >
     <p class="mx-auto max-w-md text-fg-muted">
-      I&rsquo;m looking for a software engineering role and open to freelance web
-      work. The fastest way to reach me is email.
+      I&rsquo;m looking for a role in AI and software engineering, and open to
+      freelance web work. Reach me by email or phone.
     </p>
 
     <div class="mt-6 flex flex-wrap justify-center gap-3">
@@ -20,6 +20,13 @@ import { site } from '../data/site';
       >
         <Icon name="mail" size={18} />
         {site.email}
+      </a>
+      <a
+        href={`tel:${site.phone.replace(/\s+/g, '')}`}
+        class="inline-flex items-center gap-2 rounded-lg border border-border bg-bg px-5 py-2.5 font-medium text-fg transition-colors hover:bg-surface-2"
+      >
+        <Icon name="phone" size={18} />
+        {site.phone}
       </a>
       <a
         href={site.cv}

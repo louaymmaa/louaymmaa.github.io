@@ -16,6 +16,14 @@ const { project } = Astro.props;
     <span class="shrink-0 text-sm text-fg-muted">{project.year}</span>
   </div>
 
+  {
+    project.label && (
+      <p class="mt-2 w-fit rounded-md bg-accent/15 px-2 py-0.5 text-xs font-medium text-accent">
+        {project.label}
+      </p>
+    )
+  }
+
   <p class="mt-2 text-fg-muted">{project.summary}</p>
 
   <ul class="mt-4 flex flex-wrap gap-2">

@@ -2,6 +2,8 @@ export type Project = {
   slug: string;
   title: string;
   year: string;
+  /** Optional badge, e.g. "Graduation project". */
+  label?: string;
   /** One line shown on the card. */
   summary: string;
   /** Short case study — a few sentences, honest about scope. */
@@ -18,6 +20,23 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+    slug: 'sign-language-app',
+    title: 'Sign Language App',
+    year: '2026',
+    label: 'Graduation project',
+    summary:
+      'My graduation project — a Flutter mobile app built around sign language.',
+    problem:
+      'Sign-language learners and the Deaf and hard-of-hearing community have far fewer mobile tools than text-based apps offer. For my final-year graduation project I set out to build a mobile app around sign language.',
+    build:
+      'A cross-platform mobile app built with Flutter and Dart — screen flow, navigation and app state. The full write-up of the features is in the repository.',
+    learned:
+      'My first mobile app taken end to end: structuring a Flutter project, moving between screens and managing state, and designing for a visual-first interface rather than a text-first one.',
+    stack: ['Flutter', 'Dart'],
+    repo: 'https://github.com/louaymmaa/sign-language-app',
+    image: null,
+  },
   {
     slug: 'storage-management-system',
     title: 'Storage Management System',
@@ -53,19 +72,6 @@ export const projects: Project[] = [
     image: null,
   },
   {
-    slug: 'sign-language-app',
-    title: 'Sign Language App',
-    year: '2026',
-    summary: 'A Flutter app around sign language.',
-    problem: 'TODO(louay): what problem does it solve / who is it for?',
-    build: 'TODO(louay): what did you build, and is there any ML / model in it?',
-    learned: 'TODO(louay): one honest lesson.',
-    stack: ['Flutter', 'Dart'],
-    repo: 'https://github.com/louaymmaa/sign-language-app',
-    image: null,
-    draft: true,
-  },
-  {
     slug: 'calori',
     title: 'Calori',
     year: '2026',
@@ -84,11 +90,6 @@ export const featuredProjects = projects.filter((p) => !p.draft);
 
 /** Small repos shown as a compact "more on GitHub" strip — name + link only. */
 export const moreRepos: { name: string; repo: string; language: string }[] = [
-  {
-    name: 'sign-language-app',
-    repo: 'https://github.com/louaymmaa/sign-language-app',
-    language: 'Dart / Flutter',
-  },
   {
     name: 'Calori',
     repo: 'https://github.com/louaymmaa/Calori',

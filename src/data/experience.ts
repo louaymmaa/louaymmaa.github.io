@@ -13,9 +13,9 @@ export const experience: Entry[] = [
     org: 'Resal',
     period: 'Summer 2025 · 8 weeks',
     points: [
-      'TODO(louay): what team / product did you work on?',
-      'TODO(louay): what did you actually build or contribute (stack, tasks)?',
-      'TODO(louay): anything that shipped or a measurable result?',
+      'Backend Development & Feature Delivery: Contributed to backend features and bug fixes using FastAPI, SQLAlchemy, Redis, and Kafka/Faust, while working on real development tickets within the engineering team.',
+      'Testing & Code Quality: Wrote and maintained automated tests using PyTest, helped validate application behavior, and improved reliability through debugging and code refinement.',
+      'Team Collaboration & Development Workflow: Worked within an Agile software team, using Git, pull requests, code reviews, and Docker Compose, while participating in daily discussions and collaborating with engineers to deliver assigned tasks.',
     ],
     needsDetail: true,
   },
@@ -25,7 +25,9 @@ export const experience: Entry[] = [
     period: '2024 — present',
     points: [
       'Designed and built responsive websites for individual clients end to end.',
-      'TODO(louay): name one project you can link or describe (even anonymised).',
+      'Full-Stack Development: Built responsive websites and web applications using modern frontend technologies, backend APIs, and databases.',
+      'Deployment & Optimization: Managed deployment, hosting, performance optimization, SEO, and cross-device testing.',
+      'Client Collaboration: Worked directly with clients to understand requirements, deliver tailored solutions, provide updates, and support project handoff.'
     ],
     needsDetail: true,
   },
@@ -34,17 +36,15 @@ export const experience: Entry[] = [
     org: 'Programming Club (PClub), King Khalid University',
     period: '2024 — 2026',
     points: [
-      'Helped run the university programming club and its competitive-programming activities.',
-      'TODO(louay): confirm dates and add one concrete thing you organised or taught.',
+      'Helped run the club and organise its competitive-programming practice sessions and events.',
+      'Supported members preparing for programming contests, drawing on my own competition experience.',
     ],
-    needsDetail: true,
   },
 ];
 
 export const education = {
   degree: 'B.Sc. in Computer Science',
   school: 'King Khalid University (KKU)',
-  location: 'Abha, Saudi Arabia',
   period: 'Graduated June 2026',
   gpa: '4.23 / 5.00',
 };

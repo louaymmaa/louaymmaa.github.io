@@ -5,8 +5,7 @@ export const site = {
   // One line, honest about the trajectory.
   tagline:
     'Computer Science graduate building toward software and AI engineering.',
-  location: 'Abha, Saudi Arabia',
-  availability: 'Open to software engineering opportunities',
+  availability: 'Open to AI and software engineering opportunities',
   // Shown publicly — swap if you prefer a different address.
   email: 'louaymmaa@hotmail.com',
   phone: '+966 55 135 5273',

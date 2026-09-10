@@ -66,7 +66,6 @@ const ogImage = new URL('/og.png', Astro.site).href;
         jobTitle: site.role,
         email: `mailto:${site.email}`,
         url: site.url,
-        address: { '@type': 'PostalAddress', addressLocality: site.location },
         sameAs: [site.socials.github, site.socials.linkedin],
       })}
     />
